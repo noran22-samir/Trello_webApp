@@ -32,7 +32,7 @@ const Onboarding = ({ onFinish }) => {
                     {onboardingData[currentPage].description}
                 </p>
 
-                <div className="flex space-x-2 mt-8"> //Pagination Dots 
+                <div className="flex space-x-2 mt-8">
                     {onboardingData.map((_, index) => (
                         <div
                             key={index}
