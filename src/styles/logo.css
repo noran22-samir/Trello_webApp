@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
 .logo {
     display: flex;
     color: aliceblue;
@@ -9,4 +9,4 @@
     width: 120px;
     height: auto;
 
-} */
+}
