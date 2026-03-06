@@ -1,0 +1,56 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+
+}
+.menu-bar{
+    flex:1;
+    list-style: none;
+    text-align: start;
+    border-bottom: none;
+    background: transparent;
+}
+.ant-menu-horizontal {
+    line-height: 64px;
+}
+.submenu{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav-btns{
+    background-color: rgb(7, 7, 156);
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+
+  
+}
+.Search-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 4px 8px;
+    margin-right: 80px;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    border-radius: 120px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.Search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 160px;
+} */
