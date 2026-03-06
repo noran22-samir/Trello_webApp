@@ -1,17 +1,17 @@
-import Logo from "../assets/images/logo.png";
 import { Layout } from "antd";
 import "antd/dist/reset.css";
 import SideMenuList from "./sideMenuList";
-// import Navbar from "./NavBar";
+import Navbar from "./NavBar";
 import Avatar from "./avatar";
+import logo from "../assets/images/logoimg.png";
 const { Header, Sider, Content } = Layout;
 
 function Home() {
   return (
     <Layout style={{ background: "#f1f2f4" }}>
-      {/* <Header style={{ background: "#f1f2f4", padding: 0 }}>
+      <Header style={{ background: "#f1f2f4", padding: 0 }}>
         <Navbar />
-      </Header> */}
+      </Header>
 
       <Layout style={{ background: "#f1f2f4" }}>
         <Sider className="sidebar" style={{ background: "#f1f2f4" }}>
@@ -20,7 +20,6 @@ function Home() {
         </Sider>
 
         <Content style={{ background: "white" }}>
-          <div>shahd</div>
         </Content>
       </Layout>
     </Layout>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/logo.png";
-
+import logo from "../assets/images/logoimg.png";
 const SplashScreen = ({ onFinish }) => {
     const [fade, setFade] = useState(false);
     const [scale, setScale] = useState(false);

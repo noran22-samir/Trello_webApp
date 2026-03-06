@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
 .navbar{
     width: 100%;
     display: flex;
@@ -53,4 +53,4 @@
     background: transparent;
     font-size: 14px;
     width: 160px;
-} */
+}
