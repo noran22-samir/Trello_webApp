@@ -36,7 +36,7 @@ const PageContent = () => {
         <button>
           <AiOutlineAppstore id="btn-board" />
         </button>
-        <DownOutlined
+        <DownOutlined 
           style={{ fontSize: "10px", marginLeft: "20px" }}
         ></DownOutlined>
       </div>
