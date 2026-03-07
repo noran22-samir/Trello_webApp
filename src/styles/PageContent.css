@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;8008display=swap');
+.pageContent{
+        background-color: white;
+        align-items: center;
+        justify-content:flex-start;
+        margin-top: 10px;
+        margin-left: 20px;
+}
+.first-btn{
+        background-color:#bbb8b841;
+        color: black;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        margin-bottom: 20px; 
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        
+}
+.first-btn:hover {
+        background-color: #bbb8b8d1;
+        /* effect hover */
+}
+.plus-icon{
+        background-color: transparent;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+
+
+}
+.second-row{
+        font-size: 20px;
+        font-weight: bold;
+}
+.third-row{
+        margin-top: 20px;
+        font-size: 15px;
+        display: flex;
+}
+.icons-third-row{
+        margin-left: 20px;
+        font-size: 20px;
+
+}
+#btn-board{
+        background-color:  #0e86e8;
+        font-size: 20px;
+        color: white;
+        margin-left: 20px;
+}
+#popular{
+        font-size: 20px;
+        font-weight: bold;
+
+}
+#subtitle{
+         margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 30px;
+
+}
+#last-title{
+        font-size: 20px;
+}
+.last-row{
+        padding-bottom: 50px;
+}
+.last-btns{
+         background-color: #0e86e8;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.workspace-header {
+  display: flex;               
+  justify-content: space-between; 
+  align-items: center;         
+}
+
+.workspace-buttons {
+  display: flex;               
+  gap: 10px;                   
+}

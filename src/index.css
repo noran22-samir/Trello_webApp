@@ -17,18 +17,10 @@ html, body, #root {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background-color: white;
-}
-
-
-
 .sidebar {
-  color: rgba(240, 227, 227, 0.589);
   background-color: #f4f5f7;
-  width: 3cm;
-  height: 10px;
-
+  width: 70px !important; 
+  height: 100vh !important;
 }
 
 .sidemenu {
