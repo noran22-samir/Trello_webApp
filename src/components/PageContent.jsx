@@ -36,7 +36,7 @@ const PageContent = () => {
         <button>
           <AiOutlineAppstore id="btn-board" />
         </button>
-        <DownOutlined
+        <DownOutlined 
           style={{ fontSize: "10px", marginLeft: "20px" }}
         ></DownOutlined>
       </div>
@@ -63,7 +63,7 @@ const PageContent = () => {
         <div className="workspace-header">
           <span id="last-title">Trello Workspace</span>
           <div className="workspace-buttons">
-            <button className="last-btns">Views</button>
+            <button className="last-btns">Views</button>   
             <button className="last-btns">Members</button>
             <button className="last-btns">Settings</button>
             <button className="last-btns">Upgrade</button>
