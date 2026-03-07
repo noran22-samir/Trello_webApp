@@ -2,21 +2,37 @@ import React, { useState } from "react";
 import SplashScreen from "./components/SplashScreen";
 import Onboarding from "./components/onBoarding";
 import Home from "./components/Home";
-
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 function App() {
   const [screen, setScreen] = useState("splash");
 
   const handleSplashFinish = () => setScreen("onboarding");
-  const handleOnboardingFinish = () => {
-    setScreen("home"); 
-  };
 
-  if (screen === "splash") return <SplashScreen onFinish={handleSplashFinish} />;
-  if (screen === "onboarding") return <Onboarding onFinish={handleOnboardingFinish} />;
-  if (screen === "home") return <Home />;
+  const handleOnboardingFinish = () => setScreen("signup");
 
-  return null; 
+  if (screen === "splash")
+    return <SplashScreen onFinish={handleSplashFinish} />;
+
+  if (screen === "onboarding")
+    return <Onboarding onFinish={handleOnboardingFinish} />;
+
+  if (screen === "signup")
+    return <SignUp goToLogin={() => setScreen("login")} />;
+
+  if (screen === "login")
+    return (
+      <Login
+        onFinish={() => setScreen("home")}
+        goToSignup={() => setScreen("signup")}
+      />
+    );
+
+  if (screen === "home")
+    return <Home />;
+
+  return null;
 }
 
 export default App;
