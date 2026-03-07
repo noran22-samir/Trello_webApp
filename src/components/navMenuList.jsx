@@ -8,7 +8,6 @@ const NavMenuList = () => {
   const [openKeys, setOpenKeys] = useState([]);
 
   const onOpenChange = (keys) => {
-    // بس نفتح اللي ضغطنا عليه ونقفل الباقي
     const latestOpenKey = keys.find((key) => !openKeys.includes(key));
     setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
   };
