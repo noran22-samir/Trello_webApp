@@ -65,17 +65,8 @@ const PageContent = () => {
           <option value="palstine">palstine</option>
         </datalist>{" "}
       </div>
-      <div className="template-cards-container">
-        <TemplateCard image={Templateimg1} title="Project Management" />
-        <TemplateCard image={Templateimg2} title="Project Management" />
-        <TemplateCard image={Templateimg3} title="Project Management" />
-        <TemplateCard image={Templateimg4} title="Project Management" />
-      </div>
-      <div>
-        <label id="SortLabel">Sort by</label>
-        <label id="FilterLabel">Filter by</label>
-        <SortFilterBoards />
-      </div>
+      
+      
       <div
         style={{
           width: "99%",
