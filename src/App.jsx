@@ -31,9 +31,9 @@ function App() {
       />
     );
 
-  if (screen === "home")
-    return <Home />;
-
+    if (screen === "home") return <Home setScreen={setScreen} />;
+  if (screen === "settings") return <WorkspaceSettings setScreen={setScreen} />;
+if (screen === "profile") return <ProfileVisibility setScreen={setScreen} />;
   return null;
 }
 

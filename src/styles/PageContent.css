@@ -73,7 +73,6 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  
 }
 
 .workspace-header {
@@ -87,15 +86,15 @@
   justify-content: flex-end;
   gap: 10px;
 }
-.workspace-left{
-  display:flex;
-  align-items:center;
-  gap:10px;
+.workspace-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.lasticon{
-          width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.lasticon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 #sort1 {
   margin-left: 30px;

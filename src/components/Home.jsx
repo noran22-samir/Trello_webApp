@@ -8,8 +8,7 @@ import PageContent from "./PageContent";
 import logo from "../assets/images/logoimg.png";
 const { Header, Sider, Content } = Layout;
 
-function Home() {
-  
+const Home = ({ setScreen }) => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Header style={{ background: "#f1f2f4", padding: 0 }}>
@@ -19,7 +18,7 @@ function Home() {
       <Layout>
         <Sider width={70} className="sidebar" style={{ background: "#f4f5f7" }}>
           <Avatar />
-          <SideMenuList />
+          <SideMenuList setScreen={setScreen} />{" "}
         </Sider>
 
         <Content style={{ background: "white" }}>
@@ -28,6 +27,6 @@ function Home() {
       </Layout>
     </Layout>
   );
-}
+};
 
 export default Home;

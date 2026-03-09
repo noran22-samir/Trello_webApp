@@ -6,15 +6,16 @@ import {
   CalendarOutlined,
   BellOutlined,
   InfoCircleOutlined,
-  TableOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
-import ProfileVisibility from "./Profile";
-import WorkspaceSettings from "./Settings";
-
-const SideMenuList = () => {
+const SideMenuList = ({ setScreen }) => {
   return (
-    <Menu className='sidemenu' mode="inline">
-      <Menu.Item key="home" icon={<AppstoreOutlined />}>
+    <Menu className="sidemenu" mode="inline">
+      <Menu.Item
+        key="home"
+        icon={<AppstoreOutlined />}
+        onClick={() => setScreen("home")}
+      >
         Home
       </Menu.Item>
 
@@ -22,7 +23,11 @@ const SideMenuList = () => {
         Team
       </Menu.Item>
 
-      <Menu.Item key="settings" icon={<SettingOutlined />}>
+      <Menu.Item
+        key="settings"
+        icon={<SettingOutlined />}
+        onClick={() => setScreen("settings")}
+      >
         Settings
       </Menu.Item>
 
@@ -38,15 +43,15 @@ const SideMenuList = () => {
         Info
       </Menu.Item>
 
-      <Menu.Item key="profile" icon={<ProfileVisibility />}>
+      <Menu.Item
+        key="profile"
+        icon={<UserOutlined />}
+        onClick={() => setScreen("profile")}
+      >
         Profile
       </Menu.Item>
-
-      <Menu.Item key="workspace_settings" icon={<WorkspaceSettings />}>
-        Workspace
-      </Menu.Item>
     </Menu>
-  ); 
+  );
 };
 
 export default SideMenuList;
