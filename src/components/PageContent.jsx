@@ -71,6 +71,11 @@ const PageContent = () => {
         <TemplateCard image={Templateimg3} title="Project Management" />
         <TemplateCard image={Templateimg4} title="Project Management" />
       </div>
+      <div>
+        <label id="SortLabel">Sort by</label>
+        <label id="FilterLabel">Filter by</label>
+        <SortFilterBoards />
+      </div>
       <div
         style={{
           width: "99%",
