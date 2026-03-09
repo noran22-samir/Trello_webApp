@@ -12,3 +12,4 @@ function TemplateCard({ image, title }) {
 }
 
 export default TemplateCard;
+
