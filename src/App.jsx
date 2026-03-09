@@ -4,6 +4,8 @@ import Onboarding from "./components/onBoarding";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import WorkspaceSettings from "./components/Settings";
+import ProfileVisibility from "./components/Profile";
 
 function App() {
   const [screen, setScreen] = useState("splash");
