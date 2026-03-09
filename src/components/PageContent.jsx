@@ -12,6 +12,7 @@ import Templateimg1 from "../assets/images/Template-img1.png";
 import Templateimg2 from "../assets/images/Template-img2.png"; 
 import Templateimg3 from "../assets/images/Template-img3.png"; 
 import Templateimg4 from "../assets/images/Template-img4.png"; 
+import Lasticon from "../assets/images/lasticon.jpg";
 
 const PageContent = () => {
   return (
@@ -36,7 +37,7 @@ const PageContent = () => {
         <button>
           <AiOutlineAppstore id="btn-board" />
         </button>
-        <DownOutlined 
+        <DownOutlined
           style={{ fontSize: "10px", marginLeft: "20px" }}
         ></DownOutlined>
       </div>
@@ -51,7 +52,18 @@ const PageContent = () => {
       <div id="popular">Popular Templets</div>
       <div id="subtitle">
         Get going faster with a template from trello community or
-        <SortFilterBoards />
+        <input
+          type="sort"
+          list="list"
+          placeholder=" Choose category"
+          id="sort1"
+        />
+        <datalist id="list">
+          <option value="Egypt">Egypt</option>
+          <option value="france">france</option>
+          <option value="india">india</option>
+          <option value="palstine">palstine</option>
+        </datalist>{" "}
       </div>
       <div className="template-cards-container">
         <TemplateCard image={Templateimg1} title="Project Management" />
@@ -59,16 +71,36 @@ const PageContent = () => {
         <TemplateCard image={Templateimg3} title="Project Management" />
         <TemplateCard image={Templateimg4} title="Project Management" />
       </div>
+      <div>
+        <label id="SortLabel">Sort by</label>
+        <label id="FilterLabel">Filter by</label>
+        <SortFilterBoards />
+      </div>
+      <div
+        style={{
+          width: "99%",
+          margin: "20px auto",
+          borderTop: "2px solid #cccccc8c",
+        }}
+      ></div>
       <div className="last-row">
         <div className="workspace-header">
-          <span id="last-title">Trello Workspace</span>
+          <div className="workspace-left">
+            <div className="lasticon">
+              <img src={Lasticon} alt="Logo" />
+            </div>
+            <span id="last-title">Trello Workspace</span>
+          </div>
+
           <div className="workspace-buttons">
-            <button className="last-btns">Views</button>   
+            <button className="last-btns">Views</button>
             <button className="last-btns">Members</button>
             <button className="last-btns">Settings</button>
             <button className="last-btns">Upgrade</button>
           </div>
         </div>
+
+        <div className="design-card">Design</div>
       </div>
     </div>
   );
