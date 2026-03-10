@@ -7,13 +7,14 @@ import {
   BellOutlined,
   InfoCircleOutlined,
   UserOutlined,
+  HomeOutlined,
 } from "@ant-design/icons";
 const SideMenuList = ({ setScreen }) => {
   return (
     <Menu className="sidemenu" mode="inline">
       <Menu.Item
         key="home"
-        icon={<AppstoreOutlined />}
+        icon={<HomeOutlined />}
         onClick={() => setScreen("home")}
       >
         Home
@@ -51,9 +52,9 @@ const SideMenuList = ({ setScreen }) => {
         Profile
       </Menu.Item>
 
-       <Menu.Item
+      <Menu.Item
         key="Templates"
-        icon={<AppstoreOutlined/>}
+        icon={<AppstoreOutlined />}
         onClick={() => setScreen("Templates")}
       >
         Templates

@@ -1,24 +1,28 @@
-import { Sidebar } from './templateComponents/Sidebar';
-import { FSection } from './templateComponents/FeaturedCategoriesSection';
+import { FSection } from "./templateComponents/FeaturedCategoriesSection";
 import { TempSection } from "./templateComponents/TempSection";
-import Navbar from './NavBar';
+import Navbar from "./NavBar";
+import { Layout } from "antd";
+import SideMenuList from "./sideMenuList";
 
+const { Sider } = Layout;
 
-const Templates=({ setScreen }) => {
-    return (
-        <>
-            <Navbar />
+const Templates = ({ setScreen }) => {
+  return (
+    <>
+      <Navbar />
 
-            <div className='flex'>
-                <Sidebar setScreen={setScreen} />
+      <div className="flex">
+        <Sider width={70} className="sidebar" style={{ background: "#f4f5f7" }}>
+          <SideMenuList setScreen={setScreen} />
+        </Sider>
 
-                <div className=' flex flex-1 flex-col '>
-                    <FSection />
-                    <TempSection />
-                </div>
+        <div className="flex flex-1 flex-col">
+          <FSection />
+          <TempSection />
+        </div>
+      </div>
+    </>
+  );
+};
 
-            </div>
-        </>
-    )
-}
 export default Templates;
