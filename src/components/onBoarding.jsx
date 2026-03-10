@@ -47,6 +47,7 @@ const Onboarding = ({ onFinish }) => {
                 <button onClick={skip} className="text-white font-semibold bg-blue-900 px-6 py-2 rounded-lg">
                     Skip
                 </button>
+
                 <button onClick={nextPage} className="bg-blue-900 text-white px-6 py-2 rounded-lg">
                     {currentPage === onboardingData.length - 1 ? "Get Started" : "Next"}
                 </button>
