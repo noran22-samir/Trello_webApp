@@ -4,7 +4,7 @@ import githubIcon from "../assets/images/github.png";
 import microsoftIcon from "../assets/images/pngimg.com - microsoft_PNG5.png";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
-const SignUp = ({ goToLogin }) => {
+const SignUp = ({ goToLogin, goToHome }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPass, setConfirmPass] = useState("");
@@ -47,7 +47,9 @@ const SignUp = ({ goToLogin }) => {
         }
 
         setError("");
-        alert("Sign Up Successful!");
+
+        // بدل alert → نروح للهوم
+        goToHome();
     };
 
     return (
@@ -88,7 +90,7 @@ const SignUp = ({ goToLogin }) => {
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
                             onClick={() => setShowPassword(!showPassword)}
                         >
-                            {showPassword ? <FiEye size={20} /> : <FiEyeOff size={20} />}
+                            {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
                         </button>
                     </div>
 
@@ -107,14 +109,14 @@ const SignUp = ({ goToLogin }) => {
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
                             onClick={() => setShowConfirm(!showConfirm)}
                         >
-                            {showPassword ? <FiEye size={20} /> : <FiEyeOff size={20} />}                        </button>
+                            {showConfirm ? <FiEyeOff size={20} /> : <FiEye size={20} />}
+                        </button>
                     </div>
 
                     {error && (
                         <p className="text-red-500 text-sm">{error}</p>
                     )}
 
-                    {/* Submit */}
                     <button
                         type="submit"
                         className="w-full py-3 rounded-full bg-blue-800 hover:bg-blue-600 text-white font-bold transition-colors"
@@ -123,7 +125,6 @@ const SignUp = ({ goToLogin }) => {
                     </button>
                 </form>
 
-                {/* Login  */}
                 <p className="text-center text-gray-500 mt-5">
                     Already have an account?{" "}
                     <span
@@ -134,7 +135,6 @@ const SignUp = ({ goToLogin }) => {
                     </span>
                 </p>
 
-                {/* Icons */}
                 <div className="flex items-center justify-center mt-5 space-x-5">
                     <img src={googleIcon} alt="Google" className="w-8 h-8 cursor-pointer" />
                     <img src={githubIcon} alt="GitHub" className="w-8 h-8 cursor-pointer" />

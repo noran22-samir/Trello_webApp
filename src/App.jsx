@@ -21,8 +21,12 @@ function App() {
     return <Onboarding onFinish={handleOnboardingFinish} />;
 
   if (screen === "signup")
-    return <SignUp goToLogin={() => setScreen("login")} />;
-
+  return (
+    <SignUp
+      goToLogin={() => setScreen("login")}
+      goToHome={() => setScreen("home")}
+    />
+  );
   if (screen === "login")
     return (
       <Login

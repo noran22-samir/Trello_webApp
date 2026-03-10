@@ -6,7 +6,7 @@ import Avatar from "./avatar";
 const { Sider, Content } = Layout;
 
 const ProfileVisibility = ({ setScreen }) => {
-  const [username, setUsername] = useState("nourelsahhar");
+  const [username, setUsername] = useState("");
 
   const containerStyle = {
     maxWidth: "650px",
