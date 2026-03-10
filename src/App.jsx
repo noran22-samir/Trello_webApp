@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import WorkspaceSettings from "./components/Settings";
 import ProfileVisibility from "./components/Profile";
+import Templates from "./components/Templates";
 
 function App() {
   const [screen, setScreen] = useState("splash");
@@ -38,6 +39,8 @@ function App() {
     if (screen === "home") return <Home setScreen={setScreen} />;
   if (screen === "settings") return <WorkspaceSettings setScreen={setScreen} />;
 if (screen === "profile") return <ProfileVisibility setScreen={setScreen} />;
+if (screen === "Templates") return <Templates setScreen={setScreen} />;
+
   return null;
 }
 

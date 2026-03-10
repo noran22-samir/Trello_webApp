@@ -50,6 +50,14 @@ const SideMenuList = ({ setScreen }) => {
       >
         Profile
       </Menu.Item>
+
+       <Menu.Item
+        key="Templates"
+        icon={<AppstoreOutlined/>}
+        onClick={() => setScreen("Templates")}
+      >
+        Templates
+      </Menu.Item>
     </Menu>
   );
 };

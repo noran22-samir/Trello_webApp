@@ -65,7 +65,7 @@ const NavMenuList = () => {
         key="10"
         title={
           <span>
-            Templets{" "}
+            Templates{" "}
             <DownOutlined style={{ fontSize: "10px", marginLeft: "4px" }} />
           </span>
         }
